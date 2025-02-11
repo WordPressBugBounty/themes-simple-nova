@@ -106,70 +106,50 @@ add_action('init', 'simple_nova_register_block_pattern_categories');
 
 
 
+
+
+
+
+
 // Initialize information content
 require_once trailingslashit(get_template_directory()) . 'inc/vendor/autoload.php';
 
 use SuperbThemesThemeInformationContent\ThemeEntryPoint;
 
-define('SUPERBTHEMES_INFO_CONTENT_TEXT_DOMAIN', "simple-nova");
-
 ThemeEntryPoint::init([
-	"templates" => [
-		array(
-			'name' => __("Front Page", "simple-nova"),
-			'frontpage' => true,
-			'required' => true,
-			'image' => 'front-page.png',
-		),
-		array(
-			'name' => __("About", "simple-nova"),
-			'required' => false,
-			'slug' => 'about',
-			'image' => 'about.png',
-		),
-		array(
-			'name' => __("Contact", "simple-nova"),
-			'required' => false,
-			'slug' => 'contact',
-			'image' => 'contact.png',
-		),
-		array(
-			'name' => __("Blog", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'blog.png',
-		),
-		array(
-			'name' => __("Page", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'pages.png',
-		),
-		array(
-			'name' => __("Post", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'posts.png',
-		),
-		array(
-			'name' => __("Archives", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'archives.png',
-		),
-		array(
-			'name' => __("Search", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => 'search.png',
-		),
-		array(
-			'name' => __("404", "simple-nova"),
-			'template_only' => true,
-			'required' => true,
-			'image' => '404.png',
-		),
-	],
-	'theme_url' => 'https://superbthemes.com/simple-nova/',
-	'demo_url' => 'https://superbthemes.com/demo/simple-nova/'
+    'type' => 'block', // block / classic
+    'theme_url' => 'https://superbthemes.com/simple-nova/',
+    'demo_url' => 'https://superbthemes.com/demo/simple-nova/',
+    'features' => array(
+    	array(
+    		'title' => __("Theme Designer", "simple-nova"),
+    		'icon' => "lego-duotone.webp",
+    		'description' => __("Choose from over 300 designs for footers, headers, landing pages & all other theme parts.", "simple-nova")
+    	),
+    	   	array(
+    		'title' => __("Editor Enhancements", "simple-nova"),
+    		'icon' => "1-1.png",
+    		'description' => __("Enhanced editor experience, grid systems, improved block control and much more.", "simple-nova")
+    	),
+    	array(
+    		'title' => __("Custom CSS", "simple-nova"),
+    		'icon' => "2-1.png",
+    		'description' => __("Add custom CSS with syntax highlight, custom display settings, and minified output.", "simple-nova")
+    	),
+    	array(
+    		'title' => __("Animations", "simple-nova"),
+    		'icon' => "wave-triangle-duotone.webp",
+    		'description' => __("Animate any element on your website with one click. Choose from over 50+ animations.", "simple-nova")
+    	),
+    	array(
+    		'title' => __("WooCommerce Integration", "simple-nova"),
+    		'icon' => "shopping-cart-duotone.webp",
+    		'description' => __("Choose from over 100 unique WooCommerce designs for your e-commerce store.", "simple-nova")
+    	),
+    	array(
+    		'title' => __("Responsive Controls", "simple-nova"),
+    		'icon' => "arrows-out-line-horizontal-duotone.webp",
+    		'description' => __("Make any theme mobile-friendly with SuperbThemes responsive controls.", "simple-nova")
+    	)
+    )
 ]);
