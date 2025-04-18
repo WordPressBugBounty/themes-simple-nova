@@ -116,7 +116,8 @@ require_once trailingslashit(get_template_directory()) . 'inc/vendor/autoload.ph
 
 use SuperbThemesThemeInformationContent\ThemeEntryPoint;
 
-ThemeEntryPoint::init([
+add_action("init", function () {
+	ThemeEntryPoint::init([
     'type' => 'block', // block / classic
     'theme_url' => 'https://superbthemes.com/simple-nova/',
     'demo_url' => 'https://superbthemes.com/demo/simple-nova/',
@@ -126,7 +127,7 @@ ThemeEntryPoint::init([
     		'icon' => "lego-duotone.webp",
     		'description' => __("Choose from over 300 designs for footers, headers, landing pages & all other theme parts.", "simple-nova")
     	),
-    	   	array(
+    	array(
     		'title' => __("Editor Enhancements", "simple-nova"),
     		'icon' => "1-1.png",
     		'description' => __("Enhanced editor experience, grid systems, improved block control and much more.", "simple-nova")
@@ -153,3 +154,4 @@ ThemeEntryPoint::init([
     	)
     )
 ]);
+});
