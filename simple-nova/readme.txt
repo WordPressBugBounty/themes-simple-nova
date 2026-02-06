@@ -3,8 +3,8 @@
 Contributors: SuperbAddons
 Requires at least: 4.0  
 Tested up to: 6.4
-Stable tag: 1.5
-Version: 1.5
+Stable tag: 3.1
+Version: 3.1
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: theme-options, threaded-comments, translation-ready, sticky-post, footer-widgets, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, featured-images, flexible-header, right-sidebar, one-column, two-columns, three-columns, buddypress, full-width-template, e-commerce, blog, news
@@ -17,7 +17,7 @@ Simple Nova is a free WordPress theme, designed for bloggers, newspapers, consul
 
 
 ## Copyright
-Simple Nova WordPress Theme, Copyright 2023 SuperbAddons
+Simple Nova WordPress Theme, Copyright 2026 SuperbAddons
 Simple Nova is distributed under the terms of the GNU GPL
 
 Simple Nova bundles the following third-party resources:
